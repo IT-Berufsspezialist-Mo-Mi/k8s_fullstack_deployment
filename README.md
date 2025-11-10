@@ -34,8 +34,8 @@ Dabei lernst du zentrale DevOps- und Cloud-Grundlagen praxisnah kennen:
 ## Schritte
 
 ###  **1. Projektvorbereitung**
-- [ ] Projektstruktur anlegen (`frontend`, `backend`, `docker-compose.yml`)
-- [ ] Flask-Backend mit MariaDB-Anbindung implementieren
+- [x] Projektstruktur anlegen (`frontend`, `backend`, `docker-compose.yml`)
+- [x] Flask-Backend mit MariaDB-Anbindung implementieren
 - [ ] Einfaches HTML-Frontend mit API-Aufruf erstellen
 - [ ] Dockerfiles für Backend & Frontend schreiben
 
