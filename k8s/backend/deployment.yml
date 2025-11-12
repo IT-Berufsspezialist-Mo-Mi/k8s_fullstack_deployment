@@ -4,7 +4,7 @@ metadata:
   name: backend
   namespace: miniapp
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       app: backend
@@ -15,7 +15,8 @@ spec:
     spec:
       containers:
       - name: backend
-        image: backend:v1          # eigenes Image verwenden, wenn auf Rechner liegt, sonst Docker Hub!
+        image: gaist86/webapp-backend:v1         # eigenes Image verwenden, wenn auf Rechner liegt, sonst Docker Hub!
+        imagePullPolicy: IfNotPresent
         envFrom:
           - configMapRef:
               name: app-config

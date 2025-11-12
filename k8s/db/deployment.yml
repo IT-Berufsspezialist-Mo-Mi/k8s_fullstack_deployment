@@ -4,7 +4,7 @@ metadata:
   name: db
   namespace: miniapp
 spec:
-  replicas: 1
+  replicas: 5
   selector:
     matchLabels:
       app: db
