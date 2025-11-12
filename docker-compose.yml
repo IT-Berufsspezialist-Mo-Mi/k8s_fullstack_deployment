@@ -1,10 +1,10 @@
-version: "3.9"
-services:
-  db:
-    image: mariadb
-    environment:
-      - MYSQL_ROOT_PASSWORD=pass
-      - MYSQL_DATABASE=demo
+version: "3.9"                                #Version des Compose Dateiformats
+services:                                     #ab hier werden unsere Container definiert
+  db:                                         
+    image: mariadb                            # offizielles MariaDB Image vom Docker Hub --> image beschreibt hier das ein image aus dem Docker Hub genommen werden soll
+    environment:                              #Umgebungsvariablen --> z.B. Anmeldedaten, Name
+      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
+      - MYSQL_DATABASE=${MYSQL_DATABASE}
     volumes:
       - db_data:/var/lib/mysql
 
