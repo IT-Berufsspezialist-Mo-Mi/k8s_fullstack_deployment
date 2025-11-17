@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: gaist86/webapp-frontend:v1     # <-- eigenes Image
+        image: ryaskar/miniapp-frontend:v1     # <-- eigenes Image
         imagePullPolicy: IfNotPresent # Das setzen da wir mit lokalen Image arbeiten
         ports:
           - containerPort: 80
