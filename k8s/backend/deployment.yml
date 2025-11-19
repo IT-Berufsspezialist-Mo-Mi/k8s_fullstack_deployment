@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: backend
-        image: gaist86/webapp-backend:v1         # eigenes Image verwenden, wenn auf Rechner liegt, sonst Docker Hub!
+        image: helenhaveloh/k8s_backend:v1         # eigenes Image verwenden, wenn auf Rechner liegt, sonst Docker Hub!
         imagePullPolicy: IfNotPresent
         envFrom:
           - configMapRef:
